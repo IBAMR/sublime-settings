@@ -1,0 +1,9 @@
+{
+    "permanent_highlight_keyword_color_mappings":
+    [
+        {"keyword": "TODO", "color": "storage.type.function"},
+        {"keyword": "FIXIT", "color": "keyword"},
+        {"keyword": "FIXME", "color": "keyword"},
+        {"keyword": "WARNING", "color": "invalid"},
+    ]
+}

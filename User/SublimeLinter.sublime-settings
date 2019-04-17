@@ -1,0 +1,37 @@
+// SublimeLinter Settings - User
+{
+    "linters":
+    {
+        "clang": {
+            "args": "-Wall",
+            "I":
+            [
+                "${HOME}/sfw/petsc/petsc-maint",
+                "${HOME}/sfw/petsc/petsc-maint/include",
+                "${HOME}/sfw/petsc/petsc-maint/darwin-dbg",
+                "${HOME}/sfw/petsc/petsc-maint/darwin-dbg/include"
+            ]
+        },
+        "clang++": {
+            "args": "-std=gnu++11 -Wall",
+            "I":
+            [
+                "${HOME}/sfw/libmesh/darwin-clang-dbg",
+                "${HOME}/sfw/libmesh/darwin-clang-dbg/include",
+                "${HOME}/sfw/petsc/petsc-maint",
+                "${HOME}/sfw/petsc/petsc-maint/include",
+                "${HOME}/sfw/petsc/petsc-maint/darwin-dbg",
+                "${HOME}/sfw/petsc/petsc-maint/darwin-dbg/include",
+                "${HOME}/sfw/samrai/2.4.4/darwin-clang-dbg-c++11",
+                "${HOME}/sfw/samrai/2.4.4/darwin-clang-dbg-c++11/include",
+            ]
+        },
+        "cppcheck": {
+            "disable": true,
+            "args": [],
+            "enable": "style",
+            "excludes": [],
+            "std": ["c++11", "c99"]
+        },
+    }
+}

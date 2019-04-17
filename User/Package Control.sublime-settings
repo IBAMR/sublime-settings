@@ -1,0 +1,32 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"ApplySyntax",
+		"Autotools",
+		"BracketHighlighter",
+		"Case Conversion",
+		"Clang Format",
+		"DoxyDoxygen",
+		"EasyClangComplete",
+		"File Rename",
+		"Fortran",
+		"Git",
+		"GitGutter",
+		"HighlightWords",
+		"Jump Along Indent",
+		"Material Theme",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeGDB",
+		"SublimeLinter",
+		"SublimeLinter-clang",
+		"SublimeLinter-cppcheck",
+		"TodoReview"
+	]
+}

@@ -1,6 +1,7 @@
 # IBAMR Project Settings and Packages for Sublime Text 3
 
-To install on a Mac:
+The following instructions will set up the Pacakges and basic configuration on a Mac.
+**_NOTE_:** They will remove any customization that you may have already made to Sublime, and so use with caution.
 1. [Install Sublime Package Control](https://packagecontrol.io/installation)
 2. Close Sublime Text
 3. Open Terminal and input the following commands:

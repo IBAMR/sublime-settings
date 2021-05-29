@@ -6,26 +6,15 @@
 	"installed_packages":
 	[
 		"A File Icon",
-		"AdvancedNewFile",
 		"ApplySyntax",
 		"Autotools",
 		"BracketHighlighter",
-		"Case Conversion",
-		"Clang Format",
-		"DoxyDoxygen",
-		"EasyClangComplete",
-		"File Rename",
 		"Fortran",
+		"Git Conflict Resolver",
 		"GitGutter",
 		"HighlightWords",
-		"Jump Along Indent",
-		"Material Theme",
+		"LSP",
 		"Package Control",
-		"SideBarEnhancements",
-		"SublimeGDB",
-		"SublimeLinter",
-		"SublimeLinter-clang",
-		"SublimeLinter-cppcheck",
-		"TodoReview"
-	]
+		"Theme - Gravity",
+	],
 }

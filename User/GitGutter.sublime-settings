@@ -1,0 +1,13 @@
+// GitGutter Settings - User
+{
+    "diff_popup_default_mode": "diff",
+    "line_annotation_text": "",
+    "protected_regions": [
+      "bookmarks",
+      "lsp_error",
+      "lsp_hint",
+      "lsp_info",
+      "lsp_warning",
+    ],
+    "show_line_annotation": "false",
+}

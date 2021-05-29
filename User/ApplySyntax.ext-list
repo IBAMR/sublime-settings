@@ -9,15 +9,6 @@
 	[
 		"html.erb"
 	],
-	"JSON":
-	[
-		".bowerrc",
-		".csslintrc",
-		".eslintrc",
-		".jscsrc",
-		".jshintrc",
-		"geojson"
-	],
 	"PHP":
 	[
 		"inc",
@@ -61,5 +52,5 @@
 		"YAML-tmLanguage",
 		"yml",
 		"yml.dist"
-	]
+	],
 }

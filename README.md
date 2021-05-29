@@ -31,12 +31,12 @@ The `.gitignore` file in IBAMR is configured so that files named `*.sublime-proj
 It is possible to get full code completion in Sublime Text by installing `clangd`, which is provided by, e.g., the `llvm` package in Homebrew.
 Once `clangd` is available, it is necessary create either a `compile_commands.json` file or a `compile_flags.txt` file.
 The purpose of this file is to inform `clangd` of key compiler flags.
-Our current recommendation is to create a `compiler_flags.txt` file, since this allows code completion to work "out of the box" for any source code file in the project.
+Our current recommendation is to create a `compile_flags.txt` file, since this allows code completion to work "out of the box" for any source code file in the project.
 
-An example file is provided in `IBAMR/scripts/project_templates/example_compiler_flags.txt`.
-To use this file to create a working `compiler_flags.txt` file, first copy the file into your IBAMR source directory:
+An example file is provided in `IBAMR/scripts/project_templates/example_compile_flags.txt`.
+To use this file to create a working `compile_flags.txt` file, first copy the file into your IBAMR source directory:
 ```
-cp /path/to/IBAMR/scripts/project_templates/example_compiler_flags.txt /path/to/IBAMR/compiler_flags.txt
+cp /path/to/IBAMR/scripts/project_templates/example_compile_flags.txt /path/to/IBAMR/compile_flags.txt
 ```
 then edit its contents to point to the correct directories.
 You also can place this file in a higher level directory if you want it to be used with other projects.

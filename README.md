@@ -23,8 +23,7 @@ Package Control will automatically download the necessary Sublime Text packages.
 
 There is also a Sublime Text project file template for IBAMR that is intended to be placed in the IBAMR source code directory.  To set up this project:
 ```
-cd /path/to/IBAMR
-cp scripts/project_templates/sublime/ibamr.sublime-project.template ./ibamr.sublime-project
+cp /path/to/IBAMR-sublime-settings/ibamr.sublime-project.template /path/to/IBAMR/ibamr.sublime-project
 ```
 The `.gitignore` file in IBAMR is configured so that files named `*.sublime-project` or `*.sublime-workspace` are not tracked by git.  This facilitates customization of the project files.
 
@@ -33,13 +32,17 @@ Once `clangd` is available, it is necessary create either a `compile_commands.js
 The purpose of this file is to inform `clangd` of key compiler flags.
 Our current recommendation is to create a `compile_flags.txt` file, since this allows code completion to work "out of the box" for any source code file in the project.
 
-An example file is provided in `IBAMR/scripts/project_templates/example_compile_flags.txt`.
+An example file is provided named `example_compile_flags.txt`.
 To use this file to create a working `compile_flags.txt` file, first copy the file into your IBAMR source directory:
 ```
-cp /path/to/IBAMR/scripts/project_templates/example_compile_flags.txt /path/to/IBAMR/compile_flags.txt
+cp /path/to/IBAMR-sublime-settings/example_compile_flags.txt /path/to/IBAMR/compile_flags.txt
 ```
 then edit its contents to point to the correct directories.
-You also can place this file in a higher level directory if you want it to be used with other projects.
+
+You also can place this file in a higher level directory if you want it to be used with other projects, e.g.,
+```
+cp /path/to/IBAMR-sublime-settings/example_compile_flags.txt $HOME/code/compile_flags.txt
+```
 
 An extremely rudimentary script, `IBAMR/scripts/setup_compile_commands.sh`, is also available to create a `compile_commands.json` file.
 This script requires users to install `scan-build` and `compdb`:

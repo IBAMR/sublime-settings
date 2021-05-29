@@ -1,0 +1,17 @@
+%YAML 1.2
+---
+name: make_output
+scope: source.build_output
+hidden: true
+contexts:
+  main:
+    - match: '^(..[^:\n]*):([0-9]+):?([0-9]+)?:?'
+      scope: keyword.control
+    - match: '\bwarning:'
+      scope: keyword
+    - match: '\b(fatal error|error):'
+      scope: invalid
+    - match: 'make(\[.+\])?:'
+      scope: entity.name.class
+    - match: '^\[.+\]$'
+      scope: comment

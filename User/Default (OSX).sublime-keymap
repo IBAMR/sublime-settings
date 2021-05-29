@@ -1,4 +1,12 @@
 [
     { "keys": ["command+v"], "command": "paste_and_indent" },
     { "keys": ["command+shift+v"], "command": "paste" },
+    { "keys": ["control+command+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+    { "keys": ["command+4"], "command": "next_result"},
+    { "keys": ["command+5"], "command": "prev_result"},
+    { "keys": ["shift+option+f"], "command": "find_next_conflict" },
+    { "keys": ["shift+option+o"], "command": "keep", "args": { "keep": "ours" } },
+    { "keys": ["shift+option+t"], "command": "keep", "args": { "keep": "theirs" } },
+    { "keys": ["shift+option+a"], "command": "keep", "args": { "keep": "ancestor" } },
+    { "keys": ["shift+option+c"], "command": "list_conflict_files" },
 ]

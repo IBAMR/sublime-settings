@@ -33,7 +33,16 @@ Once `clangd` is available, it is necessary create either a `compile_commands.js
 The purpose of this file is to inform `clangd` of key compiler flags.
 Our current recommendation is to create a `compiler_flags.txt` file, since this allows code completion to work "out of the box" for any source code file in the project.
 
-An extremely rudimentary script is also available to create a `compile_commands.json` file in `IBAMR/scripts/setup_compile_commands.sh`.  This script requires users to install `scan-build` and `compdb`:
+An example file is provided in `IBAMR/scripts/project_templates/example_compiler_flags.txt`.
+To use this file to create a working `compiler_flags.txt` file, first copy the file into your IBAMR source directory:
+```
+cp /path/to/IBAMR/scripts/project_templates/example_compiler_flags.txt /path/to/IBAMR/compiler_flags.txt
+```
+then edit its contents to point to the correct directories.
+You also can place this file in a higher level directory if you want it to be used with other projects.
+
+An extremely rudimentary script, `IBAMR/scripts/setup_compile_commands.sh`, is also available to create a `compile_commands.json` file.
+This script requires users to install `scan-build` and `compdb`:
 ```
 pip install scan-build
 pip install compdb
